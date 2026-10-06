@@ -1,0 +1,110 @@
+:root {
+    color-scheme: light;
+    font-family: Georgia, "Noto Serif KR", "Songti SC", serif;
+    color: #253344;
+    background: #f3f1ec;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 72px 32px 40px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+main {
+    padding: 56px 64px;
+    background: #fff;
+    border: 1px solid #e3e0d9;
+    border-top: 4px solid #315c67;
+    border-radius: 4px;
+    box-shadow: 0 12px 36px rgb(37 51 68 / 5%);
+}
+
+.paper-title,
+paper-title {
+    display: block;
+    margin: 0 0 40px;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+paper-abstract,
+paper-keywords {
+    display: block;
+}
+
+paper-abstract {
+    margin-bottom: 32px;
+    font-size: 1.05rem;
+}
+
+paper-abstract::before,
+paper-keywords::before {
+    display: block;
+    margin-bottom: 12px;
+    color: #315c67;
+    font-family: system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+paper-abstract::before {
+    content: "Abstract";
+}
+
+paper-keywords {
+    padding-top: 24px;
+    border-top: 1px solid #e3e0d9;
+    color: #5c6975;
+    font-size: 0.95rem;
+}
+
+paper-keywords::before {
+    content: "Keywords";
+}
+
+footer {
+    margin-top: 32px;
+    text-align: right;
+    font-family: system-ui, sans-serif;
+    color: #67727d;
+    font-size: 0.85rem;
+}
+
+footer > * {
+    display: block;
+    margin: 4px 0;
+}
+
+footer name {
+    margin: 12px 0;
+    color: #253344;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    main {
+        padding: 32px 24px;
+    }
+
+    .paper-title,
+    paper-title {
+        margin-bottom: 28px;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy-Preserving Edge Service Placement | Zhou Lingxiao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <paper>
+            <h1 class="paper-title">Optimization-guided Safe Reinforcement Learning for Privacy-Preserving Edge Service Placement</h1>
+            <paper-abstract>
+                Secure edge service placement aims to assign multiple services to a limited number of Edge Computing Units (ECUs) while satisfying capacity and privacy-conflict constraints and improving the average resource utilization of activated ECUs. In this paper, we formulate the secure service placement problem as a constrained optimization problem and further extend it into a reinforcement learning (RL)-based framework to reduce computational complexity. To effectively enforce hard constraints in the RL environment, action masking is introduced. Under a unified custom environment and a common reward function, several constraint-aware mechanisms are compared, including an unconstrained baseline, Lagrangian-based soft constraints, action masking, and heuristic-based action repair, in combination with PPO, DQN, and DDQN. Experimental results show that the soft-constraint approach cannot reliably prevent constraint violations, whereas action masking and action repair significantly improve the probability of obtaining feasible placements. In particular, the action-masking-based RL method satisfies both capacity and privacy constraints while achieving approximately 10 times faster inference than the optimization-based method, at the cost of a certain optimality gap in resource utilization. These results demonstrate that action-masking-based reinforcement learning can provide a practical trade-off between constraint satisfaction and fast decision-making for secure edge service placement.
+            </paper-abstract>
+            <paper-keywords>Privacy-preserving service placement, safe reinforcement learning, reinforcement learning, integer linear programming, action masking, constrained optimization.
+            </paper-keywords>
+        </paper>
+    </main>
+    <footer>
+        <name>조우 링샤오 / Zhou Lingxiao</name>
+        <candicate>석사과정 / Master</candicate>
+        <major>정보컴퓨터공학 / Information Computer Science</major>
+        <lab>연결 지능 시스텡 렙 / CIS (Connection Intelligence System) Lab</lab>
+        <a href="mailto:zlx202488581@pusan.ac.kr">zlx202488581@pusan.ac.kr</a>
+    </footer>
+</body>
+
+</html>
